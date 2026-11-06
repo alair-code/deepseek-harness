@@ -7,6 +7,11 @@
       name: '@deepseek-ai/dsh-experimental-speech-to-text-sensevoice'
       config:
         dataRoot: !!js dshHomePath('speech-to-text', 'sensevoice')
+    - id: speech-to-text-whisper
+      name: '@deepseek-ai/dsh-experimental-speech-to-text-whisper'
+      config:
+        dataRoot: !!js dshHomePath('speech-to-text', 'whisper')
+        vadModelPath: !!js dshHomePath('speech-to-text', 'whisper', 'models', 'silero', 'silero_vad.onnx')
     - id: api-speech-to-text
       name: '@deepseek-ai/dsh-experimental-api-speech-to-text'
     - id: ui-voice-input

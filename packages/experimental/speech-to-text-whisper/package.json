@@ -1,0 +1,37 @@
+{
+  "name": "@deepseek-ai/dsh-experimental-speech-to-text-whisper",
+  "description": "Local Whisper ONNX transcription with Brazilian Portuguese support",
+  "version": "0.2.2-alpha.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git",
+    "directory": "packages/experimental/speech-to-text-whisper"
+  },
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./src/*": "./src/*",
+    "./package.json": "./package.json",
+    "./worker": "./src/worker.mjs"
+  },
+  "files": [
+    "src/*.mjs",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/schemastery": "workspace:~",
+    "sherpa-onnx-node": "1.13.8"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:~",
+    "@deepseek-ai/dsh-experimental-speech-to-text": "workspace:*"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "workspace:~"
+  }
+}
